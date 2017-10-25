@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
-
-
+//import myDrawer from './Drawer';
 
 export default class App extends Component {
   
@@ -9,6 +8,7 @@ export default class App extends Component {
     return (
       <div>
         <Header />
+        
       </div>
     );
   }

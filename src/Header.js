@@ -10,6 +10,7 @@ import ViewModule from 'material-ui/svg-icons/action/view-module';
  import {white} from 'material-ui/styles/colors';
 import SearchBox from './SearchBox';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import myDrawer from './Drawer';
 
 class Header extends Component {
     constructor(props){
@@ -35,6 +36,8 @@ class Header extends Component {
     }
     handleChangeRequestNavDrawer(){
         console.log('functon just defined latter will change');
+        
+      
 
     }
 
@@ -50,9 +53,11 @@ class Header extends Component {
               style={this.state.style.appBar}
               title={
                 <SearchBox />
+                
               }
               iconElementLeft={
                   <IconButton style={this.state.style.menuButton} onClick={this.handleChangeRequestNavDrawer}>
+                  
                     <Menu color={white} />
                   </IconButton>
               }
@@ -81,6 +86,9 @@ class Header extends Component {
                 </div>
               }
             />
+            <div>
+            <myDrawer />
+            </div>
             </MuiThemeProvider>
           </div>
       );
